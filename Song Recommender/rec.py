@@ -16,11 +16,7 @@ class ImplicitRecommender:
         - implicit_model: an implicit model
     """
 
-    def __init__(
-        self,
-        artist_retriever: ArtistRetriever,
-        implicit_model: implicit.recommender_base.RecommenderBase,
-    ):
+    def __init__(self,artist_retriever: ArtistRetriever,implicit_model: implicit.recommender_base.RecommenderBase,):
         self.artist_retriever = artist_retriever
         self.implicit_model = implicit_model
 
